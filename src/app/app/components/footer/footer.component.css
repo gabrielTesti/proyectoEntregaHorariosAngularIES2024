@@ -1,0 +1,35 @@
+.conteiner-footer{
+  background-color: #343a40;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  gap: 300px
+  
+}
+
+
+h1{
+  color: white;
+}
+
+
+.links{
+color: white;
+text-decoration: none;
+
+}
+
+
+.links:hover {
+  color: #adb5bd; 
+  text-decoration: none; 
+}

@@ -1,0 +1,38 @@
+
+
+
+ header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  background-color: #f8f9fa;
+  position: relative;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+}
+
+.title-container h1 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: bold;
+  color: rgb(34, 33, 33);
+  text-align: center;
+}
+
+app-navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px; 
+}

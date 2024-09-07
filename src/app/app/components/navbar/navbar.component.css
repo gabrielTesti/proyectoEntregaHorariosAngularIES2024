@@ -1,0 +1,51 @@
+
+.navbar {
+  display: flex;
+  align-items: center; 
+  background-color: #343a40; 
+  padding: 10px 80px; 
+}
+
+.navbar-list {
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+}
+
+
+.navbar-item {
+  margin-right: 40px; 
+}
+
+.navbar-link {
+  color: #ffffff; 
+  text-decoration: none; 
+  font-size: 16px; 
+  display: flex;
+  align-items: center; 
+}
+
+
+.navbar i {
+  color: #ffffff; 
+  font-size: 20px; 
+  margin-right: 8px; 
+}
+
+
+.navbar-link:hover {
+  color: #adb5bd; 
+  text-decoration: none; 
+}
+
+
+.navbar i:hover {
+  cursor: pointer; 
+  color: #adb5bd;
+
+}
+
+.navbar-list i {
+  margin-right: 50px; /* Ajusta el espaciado entre el ícono y el primer ítem */
+}
