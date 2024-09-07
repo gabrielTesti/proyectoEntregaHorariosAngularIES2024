@@ -26,7 +26,7 @@ body, html {
 .main-content {
     flex: 1; /* ocupa el espacio restante */
     padding: 20px;
-    background-color: #e4dede; /* fondo para mejor visibilidad */
+    background-color: #343a40; /* fondo para mejor visibilidad */
     height: 60vh;
 }
 
