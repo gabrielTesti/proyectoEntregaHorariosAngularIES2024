@@ -12,6 +12,9 @@ import { HorariosComponent } from './app/components/horarios/horarios.component'
 import { AdministrarMateriasComponent } from './app/components/administrar-materias/administrar-materias.component';
 import { ConvertidorFechasComponent } from './app/components/convertidor-fechas/convertidor-fechas.component';
 import { MaterialModule } from './app/modules/material/material.module';
+
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,8 @@ import { MaterialModule } from './app/modules/material/material.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

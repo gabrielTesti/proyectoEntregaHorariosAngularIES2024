@@ -1,1 +1,8 @@
-<p>convertidor-fechas works!</p>
+<div>
+    <label for="fecha">Ingrese una fecha:</label>
+    <input id="fecha" type="text" [(ngModel)]="fechaInput"> 
+  
+    <button (click)="convertirFecha()">Convertir</button> 
+  
+    <h2>Resultado: {{ resultado }}</h2> 
+  </div>
