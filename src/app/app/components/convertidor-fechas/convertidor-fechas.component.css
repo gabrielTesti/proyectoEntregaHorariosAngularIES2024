@@ -1,0 +1,68 @@
+
+.fecha-container {
+    width: 1150px; /* Ancho ajustado */
+    height: 40vh; /* Altura ajustada */
+    padding: 30px;
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+/* Estilos modernos para etiquetas */
+label {
+    font-size: 1.5rem; /* Tamaño de letra más grande */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color oscuro */
+    margin-bottom: 10px; /* Espacio debajo de las etiquetas */
+  }
+  
+  /* Input moderno, ahora más pequeño */
+  input[type="text"], input[type="date"] {
+    width: 50%; /* Ancho reducido */
+    padding: 10px; /* Espaciado interno reducido */
+    font-size: 1.1rem; /* Tamaño de letra ligeramente reducido */
+    border: 2px solid #ccc; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    outline: none; /* Sin borde azul al seleccionar */
+    margin-bottom: 15px; /* Espaciado debajo del input */
+    transition: all 0.3s ease-in-out; /* Animación suave en hover */
+  }
+  
+  /* Efecto de hover en el input */
+  input[type="text"]:hover, input[type="date"]:hover {
+    border-color: #007bff; /* Cambia el color del borde al pasar el mouse */
+  }
+  
+
+  button {
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 1.1rem;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+ 
+  button:hover {
+    background-color: #0056b3; 
+  }
+
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+  }

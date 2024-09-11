@@ -1,8 +1,25 @@
-<div>
-    <label for="fecha">Ingrese una fecha:</label>
-    <input id="fecha" type="text" [(ngModel)]="fechaInput"> 
+
+<div class="fecha-container">
+    <h2>Conversión de Fechas</h2>
   
-    <button (click)="convertirFecha()">Convertir</button> 
+    <div class="form-group">
+      <label>Ingrese la fecha (DD-MM-YYYY):</label>
+      <input 
+        type="date" 
+        placeholder="DD-MM-YYYY" 
+        [(ngModel)]="fechaOriginal"
+        (ngModelChange)="convertirFecha()"
+      >
+    </div>
   
-    <h2>Resultado: {{ resultado }}</h2> 
+    <div class="form-group">
+      <button class="btn" (click)="cambiarFormato()">{{ textoBoton }}</button>
+    </div>
+  
+    <div class="form-group">
+      <p *ngIf="fechaConBarras">Fecha en formato de barras: {{ fechaConBarras }}</p>
+      <p *ngIf="fechaConGuion">Fecha en formato de guiones: {{ fechaConGuion }}</p>
+    </div>
   </div>
+
+  

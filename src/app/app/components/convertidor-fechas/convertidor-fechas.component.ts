@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FechaService } from '../../service/fecha.service';
 
 @Component({
   selector: 'app-convertidor-fechas',
@@ -6,34 +7,90 @@ import { Component } from '@angular/core';
   styleUrls: ['./convertidor-fechas.component.css']
 })
 export class ConvertidorFechasComponent {
-fechaInput: string = "";
-resultado: string = "";
+  fechaOriginal: string = ""  //almacena la fecha actual al crear el componente
+  fechaConBarras: string = "";
+  fechaConGuion: string = "";
+  formatoActual: "barras" | "guiones" = "guiones"
+  textoBoton: string = "Cambiar a formato con guiones"
+
+  
+
+
+  constructor(private fechaService: FechaService){
+  }
 
 
 
-//metodo que convierte la fecha a formato en barras Y/M/D
-convertirFechaString(fecha: Date): string{
-if (fecha == undefined){
- return "Fecha no válida"
-}
-const date = new Date(fecha);
-    const year = date.getFullYear();
-    const month = ('0' + (date.getMonth() + 1)).slice(-2); 
-    const day = ('0' + date.getDate()).slice(-2); 
-
-    return `${year}/${month}/${day}`;
-}
-
-
-//metodo que se llama cuando tocamos el boton en el html
-  convertirFecha(): void {
-    if (this.fechaInput) {
-      const fecha = new Date(this.fechaInput); 
-      this.resultado = this.convertirFechaString(fecha);  
+ convertirFecha() {
+    if (this.formatoActual === 'guiones') {
+      this.fechaConBarras = this.fechaService.fechaGuionABarra(this.fechaOriginal);
+      this.fechaConGuion = ""; 
     } else {
-      this.resultado = 'ingresar una fecha valida';  
+      this.fechaConGuion = this.fechaService.fechaBarraAGuion(this.fechaOriginal);
+      this.fechaConBarras = ""; 
+    }
+  } 
+
+  cambiarFormato() {
+    if (this.formatoActual === 'guiones') {
+      this.fechaConGuion = this.fechaService.fechaBarraAGuion(this.fechaConBarras);
+      this.fechaConBarras = ""; 
+      this.formatoActual = 'barras';
+      this.textoBoton = 'Convertir a formato con barras';
+    } else {
+      this.fechaConBarras = this.fechaService.fechaGuionABarra(this.fechaConGuion);
+      this.fechaConGuion = ""; 
+      this.formatoActual = 'guiones';
+      this.textoBoton = 'Convertir a formato con guiones';
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/*   convertirFecha() {
+    this.fechaConBarras = this.fechaService.convertirFechaString(this.fechaOriginal);
+    
+    if (this.formatoActual === "guiones") {
+      this.fechaConGuion = this.fechaService.fechaBarraAGuion(this.fechaConBarras);
+    }
+  }
+
+
+  
+ cambiarFormato(){
+ if(this.formatoActual === "barras"){
+  this.fechaConGuion = this.fechaService.fechaBarraAGuion(this.fechaConBarras);
+  this.formatoActual="guiones";
+  this.textoBoton = "Cambiar a formato con barras"
+ }
+ else{
+  this.fechaConBarras = this.fechaService.fechaGuionABarra(this.fechaConGuion);
+  this.formatoActual="barras";
+  this.textoBoton= "Cambiar a formato con guiones"
+ }
+ } */
+
+
+
+
+
 
 }
 
