@@ -11,18 +11,6 @@ export class AdministrarHorariosComponent {
 
 
 
-  /* horarios: Horario[] = [];
-
-  constructor(private horariosService: HorariosService) {
-    this.horarios = this.horariosService.obtenerHorarios();
-  }
-
-  eliminarHorario(hora: string) {
-    this.horarios = this.horarios.filter(horario => horario.hora !== hora);
-    console.log('Horario eliminado:', hora);
-    
-  } */
-
 
 
 }

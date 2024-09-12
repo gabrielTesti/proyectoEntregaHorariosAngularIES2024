@@ -20,7 +20,6 @@ ngOnInit(): void {
   this.cargarHorariosFiltrados(this.diaSeleccionado);
 }
 
-
 cargarHorarios(): void{
   this.horarios = this.horariosService.obtenerHorarios();
   this.actualizarColumnas(); 

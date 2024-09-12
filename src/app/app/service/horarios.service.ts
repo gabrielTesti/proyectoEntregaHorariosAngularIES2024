@@ -28,29 +28,21 @@ export class HorariosService {
 
  
   agregarHorarios(horario: Horario): Observable<number> {
-    return new Observable(observer => {   //observer es el objeto que permite notificar al código que se suscribe al Observable (en el metodo guardarHorario)
+    return new Observable(observer => {   
       console.log('llamado', horario);
       observer.complete();
       try {
         this.horariosMaterias.push(horario);
-        observer.next(1); // agregado      
+        observer.next(1);      
       } catch {
         console.log('Error al agregar horario')
-        observer.next(-1); // error al agregar
+        observer.next(-1); 
         observer.complete();
       }
     });
-  }
+  } 
   
 
-  /* agregarHorarios(horario: Horario): number {
-    try {
-      this.horariosMaterias.push(horario);
-      return 1; 
-    } catch {
-      return -1; 
-    }
-  } */
   
 
   constructor() { }

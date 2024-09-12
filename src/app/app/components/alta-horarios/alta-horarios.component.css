@@ -1,0 +1,47 @@
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    margin-top: 20px;
+   
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+input {
+    font-size: 30px;
+    margin: 5px 0; 
+}
+
+
+button{
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: white;
+    background-color:  #007bff;
+    transition: background-color 0.3s ease;    
+    margin: 5px;
+}
+button:hover{
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+h2{
+    color: white;
+    
+}
+label{
+    color: white;
+}
+
+.botones{
+    margin-left: 80px;
+}
