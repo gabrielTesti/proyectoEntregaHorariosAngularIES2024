@@ -29,11 +29,12 @@ constructor(private horariosService: HorariosService){}
     const resultado = this.horariosService.agregarHorarios(this.nuevoHorario);
     
     if (resultado === 1) {
-      console.log('Horario agregado correctamente');
+      alert('Horario agregado correctamente');
     } else {
-      console.log('Error al agregar horario');
+      alert('Error al agregar horario');
     }
   }
+  
   
 
 borrarCampos(){
