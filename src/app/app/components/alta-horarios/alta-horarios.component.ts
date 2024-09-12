@@ -22,17 +22,19 @@ export class AltaHorariosComponent {
 constructor(private horariosService: HorariosService){}
 
 
-guardarHorario(){
-  console.log('Formulario enviado. Nuevo horario:', this.nuevoHorario);
-  this.horariosService.agregarHorarios(this.nuevoHorario).subscribe((resultado: number)=>{   
-    if(resultado===1){ 
+
+  guardarHorario() {
+    console.log('Formulario enviado. Nuevo horario:', this.nuevoHorario);
+    
+    const resultado = this.horariosService.agregarHorarios(this.nuevoHorario);
+    
+    if (resultado === 1) {
       console.log('Horario agregado correctamente');
-    }
-    else{
+    } else {
       console.log('Error al agregar horario');
     }
-  }) 
-}
+  }
+  
 
 borrarCampos(){
   this.nuevoHorario = {

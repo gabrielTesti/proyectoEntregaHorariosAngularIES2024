@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Horario } from '../interface/horario';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -27,23 +26,31 @@ export class HorariosService {
 
 
  
-  agregarHorarios(horario: Horario): Observable<number> {
-    return new Observable(observer => {   
-      console.log('llamado', horario);
-      observer.complete();
-      try {
-        this.horariosMaterias.push(horario);
-        observer.next(1);      
-      } catch {
-        console.log('Error al agregar horario')
-        observer.next(-1); 
-        observer.complete();
-      }
-    });
-  } 
+  agregarHorarios(horario: Horario): number {
+    console.log('llamado', horario);
+    try {
+      this.horariosMaterias.push(horario);
+      return 1; 
+    } catch (error) {
+      console.log('Error al agregar horario:', error);
+      return -1; 
+    }
+  }
   
 
   
 
   constructor() { }
+
+
+
+
+
+
+
+
+
+
+
+
 }
