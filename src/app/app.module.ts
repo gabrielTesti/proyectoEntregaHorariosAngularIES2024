@@ -9,11 +9,12 @@ import { FooterComponent } from './app/components/footer/footer.component';
 import { NavbarComponent } from './app/components/navbar/navbar.component';
 import { SidebarComponent } from './app/components/sidebar/sidebar.component';
 import { HorariosComponent } from './app/components/horarios/horarios.component';
-import { AdministrarMateriasComponent } from './app/components/administrar-materias/administrar-materias.component';
 import { ConvertidorFechasComponent } from './app/components/convertidor-fechas/convertidor-fechas.component';
 import { MaterialModule } from './app/modules/material/material.module';
 
 import { FormsModule } from '@angular/forms';
+import { AdministrarHorariosComponent } from './app/components/administrar-horarios/administrar-horarios.component';
+import { AltaHorariosComponent } from './app/components/alta-horarios/alta-horarios.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,9 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     SidebarComponent,
     HorariosComponent,
-    AdministrarMateriasComponent,
-    ConvertidorFechasComponent
+    ConvertidorFechasComponent,
+    AdministrarHorariosComponent,
+    AltaHorariosComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,40 @@
+
+<div class="container">
+    <h2>Agregar nuevo horario</h2>
+    
+    <form (ngSubmit)="guardarHorario()">
+      <div class="forms">
+        <label> Hora:</label>
+        <input type="text"  [(ngModel)]="nuevoHorario.hora" name="hora" required>
+      </div>
+      
+      <div class="forms">
+        <label> Lunes:</label>
+        <input type="text"  [(ngModel)]="nuevoHorario.lunes" name="lunes">
+      </div>
+      
+      <div class="forms">
+        <label >Martes:</label>
+        <input type="text"  [(ngModel)]="nuevoHorario.martes" name="martes">
+      </div>
+      
+      <div class="forms">
+        <label >Miercoles:</label>
+        <input type="text"  [(ngModel)]="nuevoHorario.miercoles" name="miercoles">
+      </div>
+      
+      <div class="forms">
+        <label>Jueves:</label>
+        <input type="text"  [(ngModel)]="nuevoHorario.jueves" name="jueves">
+      </div>
+      
+      <div class="forms">
+        <label >Viernes:</label>
+        <input type="text" [(ngModel)]="nuevoHorario.viernes" name="viernes">
+      </div>
+      
+      <button type="submit" class="botones">Guardar horario</button>
+      <button type="button" class="botones" (click)="borrarCampos()">Borrar campos</button>
+    </form>
+  </div>
+  

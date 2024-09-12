@@ -3,10 +3,10 @@
     <h2>Conversión de Fechas</h2>
   
     <div class="form-group">
-      <label>Ingrese la fecha (DD-MM-YYYY):</label>
+      <label>Ingrese la fecha (DD/MM/AAAA):</label>
       <input 
         type="date" 
-        placeholder="DD-MM-YYYY" 
+        placeholder="DD/MM/YYYY" 
         [(ngModel)]="fechaOriginal"
         (ngModelChange)="convertirFecha()"
       >
@@ -17,8 +17,8 @@
     </div>
   
     <div class="form-group">
-      <p *ngIf="fechaConBarras">Fecha en formato de barras: {{ fechaConBarras }}</p>
-      <p *ngIf="fechaConGuion">Fecha en formato de guiones: {{ fechaConGuion }}</p>
+      <p *ngIf="fechaConBarras"> {{ fechaConBarras }}</p>
+      <p *ngIf="fechaConGuion"> {{ fechaConGuion }}</p>
     </div>
   </div>
 

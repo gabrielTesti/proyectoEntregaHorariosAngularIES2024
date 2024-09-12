@@ -1,11 +1,11 @@
 
 .fecha-container {
-    width: 1150px; /* Ancho ajustado */
-    height: 40vh; /* Altura ajustada */
+    width: 1150px; 
+    height: 40vh; 
     padding: 30px;
-    background-color: #ffffff; /* Fondo blanco para el contenedor */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra elegante */
-    border-radius: 15px; /* Bordes redondeados */
+    background-color: #ffffff; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    border-radius: 15px; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -14,29 +14,29 @@
   }
   
  
-/* Estilos modernos para etiquetas */
+
 label {
-    font-size: 1.5rem; /* Tamaño de letra más grande */
-    font-weight: bold; /* Negrita */
-    color: #333; /* Color oscuro */
-    margin-bottom: 10px; /* Espacio debajo de las etiquetas */
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: #333; 
+    margin-bottom: 10px; 
   }
   
-  /* Input moderno, ahora más pequeño */
+  
   input[type="text"], input[type="date"] {
-    width: 50%; /* Ancho reducido */
-    padding: 10px; /* Espaciado interno reducido */
-    font-size: 1.1rem; /* Tamaño de letra ligeramente reducido */
-    border: 2px solid #ccc; /* Borde gris claro */
-    border-radius: 10px; /* Bordes redondeados */
-    outline: none; /* Sin borde azul al seleccionar */
-    margin-bottom: 15px; /* Espaciado debajo del input */
-    transition: all 0.3s ease-in-out; /* Animación suave en hover */
+    width: 50%; 
+    padding: 10px; 
+    font-size: 1.1rem; 
+    border: 2px solid #ccc; 
+    border-radius: 10px;
+    outline: none; 
+    margin-bottom: 15px; 
+    
   }
   
-  /* Efecto de hover en el input */
+  
   input[type="text"]:hover, input[type="date"]:hover {
-    border-color: #007bff; /* Cambia el color del borde al pasar el mouse */
+    border-color: #007bff; 
   }
   
 

@@ -47,51 +47,6 @@ export class ConvertidorFechasComponent {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-/*   convertirFecha() {
-    this.fechaConBarras = this.fechaService.convertirFechaString(this.fechaOriginal);
-    
-    if (this.formatoActual === "guiones") {
-      this.fechaConGuion = this.fechaService.fechaBarraAGuion(this.fechaConBarras);
-    }
-  }
-
-
-  
- cambiarFormato(){
- if(this.formatoActual === "barras"){
-  this.fechaConGuion = this.fechaService.fechaBarraAGuion(this.fechaConBarras);
-  this.formatoActual="guiones";
-  this.textoBoton = "Cambiar a formato con barras"
- }
- else{
-  this.fechaConBarras = this.fechaService.fechaGuionABarra(this.fechaConGuion);
-  this.formatoActual="barras";
-  this.textoBoton= "Cambiar a formato con guiones"
- }
- } */
-
-
-
-
-
-
 }
 
 
